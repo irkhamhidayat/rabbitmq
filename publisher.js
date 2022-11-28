@@ -1,7 +1,7 @@
 const amqp = require('amqplib/callback_api');
 
 // Step 1: Create Connection
-amqp.connect('amqp://localhost', (connError, connection) => {
+amqp.connect('amqp://157.245.51.160:5672', (connError, connection) => {
     if (connError) {
         throw connError;
     }
